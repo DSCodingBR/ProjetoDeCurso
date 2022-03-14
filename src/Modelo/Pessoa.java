@@ -1,18 +1,29 @@
-package Model;
+package Modelo;
 
 import java.util.Date;
 
-public class Pessoa {
-	
+public abstract class Pessoa {
+    
+    private Integer id;
     private String nome;
     private String mae;
     private String sexo;
     private Date nascimento;
     private String email;
+    private String rua;
+    private String bairro;
+    private Integer numero;
+    private Cidade cidade;
     private EstadoCivilEnum estadocivilenum;
     private TelefonesPessoa telefonespessoa;
-    private EnderecoPessoa enderecopessoa;
     
+
+        public Integer getId() {
+            return id;
+        }
+        public void setId(Integer id) {
+            this.id = id;
+        }
 	public String getNome() {
 		return nome;
 	}
@@ -43,19 +54,44 @@ public class Pessoa {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+
+        public String getRua() {
+            return rua;
+        }
+
+        public void setRua(String rua) {
+            this.rua = rua;
+        }
+
+        public String getBairro() {
+            return bairro;
+        }
+
+        public void setBairro(String bairro) {
+            this.bairro = bairro;
+        }
+
+        public Cidade getCidade() {
+            return cidade;
+        }
+
+        public void setCidade(Cidade cidade) {
+            this.cidade = cidade;
+        }
+
+        public Integer getNumero() {
+            return numero;
+        }
+
+        public void setNumero(Integer numero) {
+            this.numero = numero;
+        }
+        
 	public TelefonesPessoa getTelefonespessoa() {
 		return telefonespessoa;
 	}
 	public void setTelefonespessoa(TelefonesPessoa telefonespessoa) {
 		this.telefonespessoa = telefonespessoa;
-	}
-	
-	public EnderecoPessoa getEnderecopessoa() {
-		return enderecopessoa;
-	}
-	public void setEnderecopessoa(EnderecoPessoa enderecopessoa) {
-		this.enderecopessoa = enderecopessoa;
 	}
 	public EstadoCivilEnum getEstadocivilenum() {
 		return estadocivilenum;
@@ -63,8 +99,5 @@ public class Pessoa {
 	public void setEstadocivilenum(EstadoCivilEnum estadocivilenum) {
 		this.estadocivilenum = estadocivilenum;
 	}
-	
-	
-	
-    
+	  
 }

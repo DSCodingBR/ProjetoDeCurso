@@ -1,9 +1,19 @@
-package Model;
+package Modelo;
 
 public class Curso {
+    
+        private Integer id;
 	private String nome;
-	private String cargaHoraria;
+	private Integer cargaHoraria;
 	private AreaCurso areacurso;
+
+        public Integer getId() {
+            return id;
+        }
+
+        public void setId(Integer id) {
+            this.id = id;
+        }
 	
 	public String getNome() {
 		return nome;
@@ -11,10 +21,10 @@ public class Curso {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getCargaHoraria() {
+	public Integer getCargaHoraria() {
 		return cargaHoraria;
 	}
-	public void setCargaHoraria(String cargaHoraria) {
+	public void setCargaHoraria(Integer cargaHoraria) {
 		this.cargaHoraria = cargaHoraria;
 	}
 	
@@ -25,5 +35,6 @@ public class Curso {
 		this.areacurso = areacurso;
 	}
 	
+        
 	
 }

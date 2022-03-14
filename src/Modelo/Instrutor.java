@@ -1,6 +1,7 @@
-package Model;
+package Modelo;
 
 public class Instrutor extends Pessoa{
+        
 	private String formacao;
 
 	public String getFormacao() {

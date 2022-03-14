@@ -1,19 +1,19 @@
-package Model;
+package Modelo;
 
 public class Aluno extends Pessoa {
 	
 	private EscolariadeDeAlunoEnum Escolaridade;
 	private Matricula matricula;
-
-        public Aluno(){
-            
-        }
+        
         
         public Aluno(Matricula matricula) {
             this.matricula = matricula;
         }
 
-	
+        public Aluno() {
+       
+        }
+
 	public EscolariadeDeAlunoEnum getEscolaridade() {
 		return Escolaridade;
 	}
